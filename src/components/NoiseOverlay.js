@@ -5,8 +5,8 @@ function NoiseOverlay({ toggleHeavyAnimations }) {
     <div
       id="noise-overlay"
       className={clsx(
-        "fixed top-0 left-0 h-full w-full pointer-events-none",
-        toggleHeavyAnimations && "animated"
+        "fixed top-0 left-0 h-full w-full pointer-events-none"
+        // toggleHeavyAnimations && "animated"
       )}
     />
   );

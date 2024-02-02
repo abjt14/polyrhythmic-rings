@@ -20,7 +20,6 @@ function Ring({
         toggleHeavyAnimations ? "url(#colorwheel-bg)" : "rgb(128, 128, 128)"
       }
       strokeWidth={ringLineWidth}
-      mask={toggleHeavyAnimations && "url(#chord-mask)"}
       filter={toggleHeavyAnimations && `url(#${svgFilterId}saturationFilter)`}
       initial={{
         r: (50 / (ringsCount + 1)) * (index + 1) * 1.1,
