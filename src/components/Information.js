@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function Information({}) {
   return (
-    <div className="bg-neutral-900 w-full p-4 flex flex-col gap-4 rounded-md text-neutral-400 font-light">
+    <div className="bg-neutral-900 w-full px-5 pt-4 pb-5 flex flex-col gap-4 rounded-md text-neutral-400 font-light">
       <h1 className="text-3xl sm:text-4xl font-medium text-neutral-100">
         Polyrhythmic Rings
       </h1>
