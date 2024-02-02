@@ -40,26 +40,6 @@ function Render({
           >
             <ColorWheel />
           </pattern>
-          <mask id="chord-mask">
-            <rect
-              x="0"
-              y="0"
-              width="100"
-              height="49"
-              fill="white"
-              stroke="white"
-              strokeWidth="0"
-            />
-            <rect
-              x="0"
-              y="51"
-              width="100"
-              height="49"
-              fill="white"
-              stroke="white"
-              strokeWidth="0"
-            />
-          </mask>
         </defs>
         {[...Array(ringsCount)].map((_, index) => {
           const staggerredRotationValue =
