@@ -7,11 +7,23 @@ body {
 }
 
 #noise-overlay {
-  background: transparent
-    url("https://portfolio-v4-abjt14.vercel.app/assets/images/noise/noise.png")
-    repeat 0 0;
+  background: transparent url("/images/noise.png") repeat 0 0;
   background-repeat: repeat;
-  /* animation: 100ms infinite noise; */
+  opacity: 0.5;
+}
+
+#noise-overlay.animated {
+  animation: none;
+}
+
+@media screen and (min-width: 640px) {
+  #noise-overlay {
+    opacity: 0.5;
+  }
+  #noise-overlay.animated {
+    opacity: 1;
+    animation: 250ms infinite noise;
+  }
 }
 
 @keyframes noise {
