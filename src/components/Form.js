@@ -73,8 +73,9 @@ function Form({
         classes={["border-b", "border-neutral-800", "border-dashed"]}
       />
       <p className="text-neutral-500 text-sm pt-2">
-        Due to the experimental nature of SVG filters, you can toggle on/off
-        some of the visual features in case of any performance issues.
+        Due to the experimental nature of SVG filters, there can be some
+        browser-specific compatibility issues. You can toggle on/off some of the
+        visual features for a smoother audio experience.
       </p>
       <Switch
         label="Toggle Heavy Animations"
