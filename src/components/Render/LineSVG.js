@@ -66,7 +66,9 @@ function LineSVG({ index, trigger, toggleHeavyAnimations }) {
         stroke="rgb(96,96,96)"
         strokeWidth=".1"
         filter={
-          toggleHeavyAnimations && `url(#${filterId + "chord-turbulence"})`
+          toggleHeavyAnimations
+            ? `url(#${filterId + "chord-turbulence"})`
+            : "none"
         }
         transform={`rotate(${index % 2 === 0 ? 0 : 180} 50 50)`}
       />
