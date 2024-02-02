@@ -4,7 +4,7 @@ function PlayButton({ onClick }) {
       className="text-neutral-50 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-32 w-32 z-50 flex justify-center items-center gap-1 bg-[rgba(128,128,128,.1)] backdrop-blur-md rounded-full cursor-pointer"
       onClick={onClick}
     >
-      <p className="font-semibold">PLAY</p>
+      <p className="font-semibold text-lg">PLAY</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
