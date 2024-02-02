@@ -74,7 +74,7 @@ export default function Home() {
           setToggleHeavyAnimations={setToggleHeavyAnimations}
         />
       </div>
-      <NoiseOverlay />
+      <NoiseOverlay toggleHeavyAnimations={toggleHeavyAnimations} />
     </main>
   );
 }
