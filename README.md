@@ -26,7 +26,7 @@ npm run dev
 
 Now, open your browser and navigate to `http://localhost:3000` to see the application running.
 
-## Cross-Browser caveats and performance issues
+## Cross-Browser Caveats & Performance Issues
 
 One of the most performance intensive parts of the application is the horizontal strings that trigger when the white circles hit them. I faced severe performance issue in Safari and Firefox. I tried two methods to solve this.
 
