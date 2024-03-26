@@ -12,6 +12,10 @@ function LineSVG({ index, trigger, toggleHeavyAnimations }) {
     }
   }, [trigger]);
 
+  const baseFrequencyByIndex = `${
+    index % 2 === 0 ? 0.4 + index * 0.0125 : 0.4 - index * 0.0125
+  } 0`;
+
   return (
     <svg
       key={key}
@@ -32,9 +36,7 @@ function LineSVG({ index, trigger, toggleHeavyAnimations }) {
           >
             <feTurbulence
               type="fractalNoise"
-              baseFrequency={`${
-                index % 2 === 0 ? 0.4 + index * 0.0125 : 0.4 - index * 0.0125
-              } 0`}
+              baseFrequency={baseFrequencyByIndex}
               numOctaves="1"
               result="warp"
               colorInterpolationFilters="sRGB"
