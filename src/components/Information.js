@@ -23,12 +23,19 @@ function Information({}) {
         >
           Hyperplexed&apos;s video
         </Link>{" "}
-        on their YouTube channel.
+        on their YouTube channel. You can read more about it{" "}
+        <Link
+          href="https://www.abjt.dev/lab/polyrhythmic-rings"
+          className="underline underline-offset-4 hover:text-neutral-200 transition-colors duration-150 ease-in-out"
+        >
+          here
+        </Link>{" "}
+        on my website.
       </p>
       <Link
         href={"https://github.com/abjt14/polyrhythmic-rings"}
         target="_blank"
-        className="underline underline-offset-4 hover:text-neutral-200 transition-colors duration-150 ease-in-out"
+        className="w-fit self-end px-3 py-1 rounded-full bg-neutral-950 border border-neutral-700 hover:text-neutral-200 transition-colors duration-150 ease-in-out"
       >
         Code on GitHub
       </Link>
