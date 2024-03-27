@@ -28,7 +28,7 @@ export default function Home() {
   const [play, setPlay] = React.useState(false);
 
   return (
-    <main className="max-w-screen-2xl bg-neutral-950 relative h-full md:h-[100svh] w-full flex flex-col md:flex-row overflow-auto md:overflow-hidden">
+    <main className="max-w-screen-2xl bg-neutral-950 relative h-full md:h-svh w-full flex flex-col md:flex-row overflow-auto md:overflow-hidden">
       <div
         className="relative p-4 flex justify-center items-center border-r 2xl:border-x border-neutral-900 rounded-sm"
         style={{
@@ -51,7 +51,7 @@ export default function Home() {
         {!play && <PlayButton onClick={() => setPlay(true)} />}
       </div>
       <div
-        className="flex flex-col gap-8 items-start justify-between 2xl:justify-center overflow-auto p-4"
+        className="flex flex-col gap-8 items-start justify-start 3xl:justify-center overflow-auto p-4"
         style={{
           flex: "1",
         }}
