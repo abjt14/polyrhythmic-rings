@@ -38,7 +38,7 @@ function Render({
             width="100"
             height="100"
           >
-            <ColorWheel />
+            <ColorWheel/>
           </pattern>
         </defs>
         {[...Array(ringsCount)].map((_, index) => {

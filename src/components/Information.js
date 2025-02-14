@@ -2,11 +2,11 @@ import Link from "next/link";
 
 function Information({}) {
   return (
-    <div className="bg-neutral-900 w-full px-5 pt-4 pb-5 flex flex-col gap-4 rounded-md text-neutral-400 font-light">
-      <h1 className="text-3xl sm:text-4xl font-medium text-neutral-100">
-        Polyrhythmic Rings
+    <div className="bg-black-500 w-full px-5 pt-4 pb-5 flex flex-col gap-4 rounded-md text-neutral-400 font-light mt-0 mb-0">
+      <h1 className="text-3xl sm:text-4xl font-medium text-neutral-100 mt-0 mb-0">
+        Polyrhythmic Rings-sleep aid
       </h1>
-      <p>
+      <p className="mt-0 mb-0">
         Built by{" "}
         <Link
           href={"https://www.abjt.dev/"}
@@ -35,7 +35,7 @@ function Information({}) {
       <Link
         href={"https://github.com/abjt14/polyrhythmic-rings"}
         target="_blank"
-        className="w-fit self-end px-3 py-1 rounded-full bg-neutral-950 border border-neutral-700 hover:text-neutral-200 transition-colors duration-150 ease-in-out"
+        className="mt-0 mb-0 w-fit self-end px-3 py-1 rounded-full bg-neutral-950 border border-neutral-700 hover:text-neutral-200 transition-colors duration-150 ease-in-out "
       >
         Code on GitHub
       </Link>

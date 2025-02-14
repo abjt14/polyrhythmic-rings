@@ -18,7 +18,7 @@ function Slider({
   return (
     <div
       className={clsx(
-        "w-full flex flex-col flex-wrap items-start justify-center gap-1 pb-4 pt-2",
+        "flex flex-col flex-wrap items-start justify-center gap-1 pb-4 pt-2 w-full h-15",
         classes
       )}
     >
@@ -27,7 +27,7 @@ function Slider({
       </RadixLabel.Root>
       <RadixSlider.Root
         name={label.split(" ").join("-").toLowerCase()}
-        className="relative flex items-center select-none touch-none w-full h-5 cursor-pointer"
+        className="relative flex items-center select-none touch-none w-full h-1 cursor-pointer"
         min={min}
         max={max}
         step={step}
@@ -35,7 +35,7 @@ function Slider({
         onValueChange={setValue}
         minStepsBetweenThumbs={step}
       >
-        <RadixSlider.Track className="bg-neutral-700 relative grow rounded-full h-[3px]">
+        <RadixSlider.Track className="bg-neutral-700 relative grow rounded-full h-[3px] w-[200px]">
           <RadixSlider.Range className="absolute bg-neutral-50 rounded-full h-full" />
         </RadixSlider.Track>
         <RadixSlider.Thumb
@@ -48,3 +48,4 @@ function Slider({
 }
 
 export default Slider;
+

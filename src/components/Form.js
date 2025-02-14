@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "./Form/Slider";
 import Switch from "./Form/Switch";
 
+
 function Form({
   speed,
   setSpeed,
@@ -20,7 +21,7 @@ function Form({
 }) {
   return (
     <form
-      className="w-full flex flex-col justify-start items-center gap-2"
+      className="flex flex-col justify-start items-center gap-2 mt-0 mb-0"
       onSubmit={(e) => e.preventDefault()}
     >
       <Slider
@@ -32,7 +33,7 @@ function Form({
         pseudoMin={0}
         pseudoMax={25}
         step={1}
-        classes={["border-b", "border-neutral-800", "border-dashed"]}
+        classes={["border-b", "border-t", "border-neutral-800", "border-dashed"]}
       />
       <Slider
         label="Stagger"
@@ -41,7 +42,7 @@ function Form({
         min={0}
         max={100}
         step={1}
-        classes={["border-b", "border-neutral-800", "border-dashed"]}
+        classes={["border-b", "border-t", "border-neutral-800", "border-dashed"]}
       />
       <Slider
         label="Rings Count"
@@ -82,6 +83,38 @@ function Form({
         value={toggleHeavyAnimations}
         setValue={() => setToggleHeavyAnimations((prev) => !prev)}
       />
+
+      <div className="flex gap-4 mt-4 justify-between w-full text-white">
+        <div>Timbre:</div>
+        <button
+          type="button"
+          className="px-4 py-2 bg-c1 text-white rounded-lg hover:bg-cf"
+          onClick={() => setInstrument("guitar")}
+        >
+          guitar
+        </button>
+        <button
+          type="button"
+          className="px-4 py-2 bg-c2 text-white rounded-lg hover:bg-cf"
+          onClick={() => setInstrument("piano")}
+        >
+          piano
+        </button>
+        <button
+          type="button"
+          className="px-4 py-2 bg-c3 text-white rounded-lg hover:bg-cf"
+          onClick={() => setInstrument("sansula")}
+        >
+          sansula
+        </button>
+        <button
+          type="button"
+          className="px-4 py-2 bg-c4 text-white rounded-lg hover:bg-cf"
+          onClick={() => setInstrument("bowl")}
+        >
+          bowl
+        </button>
+      </div>
     </form>
   );
 }

@@ -22,7 +22,8 @@ function Switch({ label, value, setValue, classes = [] }) {
       <RadixSwitch.Root
         id={switchId}
         name={label.split(" ").join("-").toLowerCase()}
-        className="w-[42px] h-[25px] bg-transparent ring-2 ring-inset ring-neutral-700 rounded-full relative shadow-[0_2px_10px] focus:shadow-[0_0_0_2px] focus:shadow-neutral-500 data-[state=checked]:bg-neutral-700 outline-none cursor-pointer"
+        className="w-[42px] h-[25px] bg-transparent ring-2 ring-inset ring-neutral-700 rounded-full relative shadow-[0_2px_10px] focus:shadow-[0_0_0_2px] 
+        focus:shadow-neutral-500 data-[state=checked]:bg-neutral-700 outline-none cursor-pointer"
         checked={value}
         onCheckedChange={setValue}
       >

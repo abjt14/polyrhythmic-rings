@@ -1,0 +1,30 @@
+#playGradient {
+  animation: gradientAnimation 3s ease infinite;
+}
+
+@keyframes gradientAnimation {
+ 
+  0% {
+    stop-color: #96ade7;
+  }
+
+  30% {
+    stop-color: #0dbbc5;
+  }
+
+  60% {
+    stop-color: #3cadd2;
+  }
+
+  90% {
+    stop-color: #aad0dd;
+  }
+}
+
+/* #playGradient{
+    animation: gradientAnimation 3s ease infinite;
+  } */
+
+#playGradient stop {
+  animation: gradientAnimation 3s ease infinite;
+}

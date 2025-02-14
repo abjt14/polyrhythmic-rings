@@ -23,9 +23,14 @@ export default function Home() {
   const [toggleHeavyAnimations, setToggleHeavyAnimations] =
     React.useState(true);
 
-  const [instrument, setInstrument] = React.useState("sansula");
+  const [instrument, setInstrument] = React.useState("piano");
 
   const [play, setPlay] = React.useState(false);
+
+  // Toggle play/pause functionality
+  const togglePlay = () => {
+    setPlay((prev) => !prev);
+  };
 
   return (
     <main className="max-w-screen-2xl bg-neutral-950 relative h-full md:h-svh w-full flex flex-col md:flex-row overflow-auto md:overflow-hidden">
@@ -48,7 +53,9 @@ export default function Home() {
           toggleChords={toggleChords}
           toggleHeavyAnimations={toggleHeavyAnimations}
         />
-        {!play && <PlayButton onClick={() => setPlay(true)} />}
+        {/* Pass the play state and togglePlay function */}
+        <PlayButton onClick={togglePlay} play={play} />
+        {/* {!play && <PlayButton onClick={() => setPlay(true)} />} */}
       </div>
       <div
         className="flex flex-col gap-8 items-start justify-start 3xl:justify-center overflow-auto p-4"
