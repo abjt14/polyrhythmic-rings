@@ -14,7 +14,7 @@
     "@radix-ui/react-switch": "^1.0.3",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.3",
-    "next": "14.1.0",
+    "next": "^14.2.32",
     "react": "^18",
     "react-dom": "^18"
   },
@@ -24,5 +24,8 @@
     "eslint-config-next": "14.1.0",
     "postcss": "^8",
     "tailwindcss": "^3.3.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
   }
 }
