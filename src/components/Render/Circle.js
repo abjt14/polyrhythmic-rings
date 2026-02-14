@@ -8,6 +8,7 @@ function Circle({
   staggerredRotationValue,
   trigger,
 }) {
+  console.log("staggerredRotationValue", staggerredRotationValue);
   return (
     <>
       <motion.circle
@@ -28,6 +29,7 @@ function Circle({
         style={{
           originX: "50%",
           originY: "50%",
+          transformBox: "view-box",
         }}
       />
     </>
